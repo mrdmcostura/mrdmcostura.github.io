@@ -65,7 +65,7 @@ var app = angular.module("app", ["ngRoute"]);
   };
 });
   
-  app.controller("ContatoController", function($scope) {
+  app.controller("ContatoController", function($scope, $location) {
     $scope.mail = {nome: "", email: "", telefone: "", asunto: "", mensagem: ""};
     $scope.submit = function(event){
       
@@ -81,6 +81,7 @@ var app = angular.module("app", ["ngRoute"]);
     dataType: "json"
 }).done(function(resp){
       console.log("success");
+      $location.path("/home");
     }).fail(function(error){
       console.log("fail");
     });
