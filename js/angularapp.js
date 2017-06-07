@@ -81,7 +81,7 @@ var app = angular.module("app", ["ngRoute"]);
     dataType: "json"
 }).done(function(resp){
       console.log("success");
-      $location.path("#!/");
+      $location.path("/");
     }).fail(function(error){
       console.log("fail");
     });
