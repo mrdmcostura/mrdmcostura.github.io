@@ -4,6 +4,38 @@
   var baseURL = 'https://mrdmcostura.github.io';
 var app = angular.module("app", ["ngRoute"]); 
   
+    app.config(function($routeProvider) {
+      $routeProvider
+        .when('/', {
+          templateUrl: baseURL + '/templates/home.html',
+          controller: 'MainController'
+        })
+        .when('/contato', {
+          templateUrl: baseURL + '/templates/contato.html',
+          controller: 'ContatoController'
+        })
+      .when('/hello', {
+          templateUrl: 'hello.html',
+          controller: 'HelloController'
+        })     
+            .when('/empresa', {
+          templateUrl: baseURL + '/templates/empresa.html',
+          controller: 'EmpresaController'
+        })     
+                  .when('/servicos', {
+          templateUrl: baseURL + '/templates/servicos.html',
+          controller: 'ServicosController'
+        })     
+       .otherwise({
+        redirectTo: '/'
+       });
+    
+     // use the HTML5 History API
+      //  $locationProvider.html5Mode(true);
+        //$locationProvider.hashPrefix('');
+
+    
+    });
   
 //  app.run([ '$templateCache', function($templateCache) {
 //  $templateCache.put('http://www.odati.com.br/templates/home.html', 'http://www.odati.pro/templates/contato.html', 'http://www.odati.com.br/templates/empresa.html', 'http://www.odati.com.br/templates/servicos.html');
@@ -86,37 +118,5 @@ var app = angular.module("app", ["ngRoute"]);
       console.log("fail");
     });
     };
-    });
-    app.config(function($routeProvider) {
-      $routeProvider
-        .when('/', {
-          templateUrl: baseURL + '/templates/home.html',
-          controller: 'MainController'
-        })
-        .when('/contato', {
-          templateUrl: baseURL + '/templates/contato.html',
-          controller: 'ContatoController'
-        })
-      .when('/hello', {
-          templateUrl: 'hello.html',
-          controller: 'HelloController'
-        })     
-            .when('/empresa', {
-          templateUrl: baseURL + '/templates/empresa.html',
-          controller: 'EmpresaController'
-        })     
-                  .when('/servicos', {
-          templateUrl: baseURL + '/templates/servicos.html',
-          controller: 'ServicosController'
-        })     
-       .otherwise({
-        redirectTo: '/'
-       });
-    
-     // use the HTML5 History API
-      //  $locationProvider.html5Mode(true);
-        //$locationProvider.hashPrefix('');
-
-    
     });
 })();
