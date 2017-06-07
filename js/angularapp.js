@@ -1,7 +1,7 @@
 (function() {
   'use strict';
   
-  var baseURL = 'https://araxainox.github.io';
+  var baseURL = 'https://mdrmcostura.github.io';
 var app = angular.module("app", ["ngRoute"]); 
   
   
