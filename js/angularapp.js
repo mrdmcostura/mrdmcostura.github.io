@@ -71,7 +71,7 @@ var app = angular.module("app", ["ngRoute"]);
       
   event.preventDefault();
     $.ajax({
-    url: "https://formspree.io/araxainox@gmail.com", 
+    url: "https://formspree.io/mrdmcostura@gmail.com", 
     method: "POST",
     data: {message: "Nome: "+ $scope.mail.nome + "\n" +
                     "Email: "+ $scope.mail.email + "\n" +
