@@ -2,7 +2,6 @@
   'use strict';
   
   var baseURL = 'https://mrdmcostura.github.io';
-  var u = '';
 var app = angular.module("app", ["ngRoute"]); 
   
   
