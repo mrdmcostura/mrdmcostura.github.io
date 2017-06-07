@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="app">
+
+<head>
+	<script>
+  // See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/
+  (function(){
+    var redirect = sessionStorage.redirect;
+    delete sessionStorage.redirect;
+    if (redirect && redirect != location.href) {
+      history.replaceState(null, null, redirect);
+    }
+  })();
+</script>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="referrer" content="origin" />
+<title>Dinox Araxá</title>
+	<link rel="shortcut icon" href="#" />
+<!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+<link href="https://araxainox.github.io/css/style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	</head>
+
+<body>
+	
+	<div navbar></div>
+	
+	<div ng-view></div>
+	
+	<div footer></div>
+	
+	
+ 	<script type="text/ng-template" id="hello.html">
+	<div>Hello</div>
+	</script>
+	
+	
+	
+	<script type="text/javascript"
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+        <!--  
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>	
+-->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js">     </script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.js"></script>
+	
+<script type="text/javascript"
+		src="https://araxainox.github.io/js/app.js"></script>
+	<script type="text/javascript"
+		src="https://araxainox.github.io/js/angularapp.js"></script>
+	
+	
+</body>
+
+</html>
