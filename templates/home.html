@@ -3,10 +3,10 @@
     <div class="container">
    <div class="slider">
     <ul class="slides">
-      <li ng-repeat="section in sections" ng-init="finish()">
-        <img class="responsive-img" src="{{section.image}}"> 
+      <li ng-repeat="slider in sliders" ng-init="finish()">
+        <img class="responsive-img" src="{{slider.image}}"> 
         <div class="caption left-align left">
-          <h3 class="white-text">{{section.title}}</h3>
+          <h3 class="white-text">{{slider.title}}</h3>
          <!-- <h5 class="light grey-text text-darken-1">Ótima qualidade e acabamento.</h5> -->
         </div>
       </li>
