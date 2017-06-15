@@ -3,7 +3,7 @@
     <div class="container">
    <div class="slider">
     <ul class="slides">
-      <li ng-repeat="slider in sliders" >
+      <li ng-repeat="slider in sliders" ng-init="$last && finish()">
         <img class="responsive-img" src="{{slider.image}}"> 
         <div class="caption left-align left">
           <h3 class="white-text">{{slider.title}}</h3>
@@ -18,7 +18,7 @@
   </div>
 
 
-  <div class="container" ng-init="finish()">
+  <div class="container" >
     <div class="section">
 
       <div class="row">
