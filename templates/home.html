@@ -4,9 +4,9 @@
    <div class="slider">
     <ul class="slides">
       <li ng-repeat="section in sections" ng-init="finish()">
-        <img class="responsive-img" src="{{image}}"> 
+        <img class="responsive-img" src="{{section.image}}"> 
         <div class="caption left-align left">
-          <h3 class="white-text">{{title}}</h3>
+          <h3 class="white-text">{{section.title}}</h3>
          <!-- <h5 class="light grey-text text-darken-1">Ótima qualidade e acabamento.</h5> -->
         </div>
       </li>
