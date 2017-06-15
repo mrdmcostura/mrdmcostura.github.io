@@ -39,7 +39,7 @@
                      {icon: "settings", title: "Precisão", body: "Buscamos o melhor acabamento e a melhor qualidade."}];
    $scope.finish = function(){
     $('.slider').slider();
-     console.log(sliders);
+     console.log($scope.sliders);
    }
   });
   app.controller("NavController", function ($scope, $location) {
