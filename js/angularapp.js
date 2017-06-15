@@ -37,10 +37,8 @@
     $scope.sections = [{icon: "flash_on", title: "Entrega rápida", body: "Trabalhamos para lhe atender no menor tempo possível."},
                      {icon: "group", title: "Atenção com as demandas dos clientes", body: "Buscamos que o cliente se sinta realizado em sua individualidade e gosto."},
                      {icon: "settings", title: "Precisão", body: "Buscamos o melhor acabamento e a melhor qualidade."}];
-   $scope.finish = function(){
     $('.slider').slider();
-     console.log($scope.sliders);
-   }
+
   });
   app.controller("NavController", function ($scope, $location) {
     $('.button-collapse').sideNav({ closeOnClick: true });
